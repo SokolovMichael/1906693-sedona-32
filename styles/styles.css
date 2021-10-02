@@ -4,13 +4,13 @@
 
 .navigation-link-search {
   background-size: 18px 18px;
-  background-image: url("../img/search.svg");
+  background-image: url("../img/icons/navigation-search.svg");
   background-repeat: no-repeat;
 }
 
 .navigation-link-favorites {
   background-size: 18px 17px;
-  background-image: url("../img/favorites.svg");
+  background-image: url("../img/icons/navigation-favorites.svg");
   background-repeat: no-repeat;
 }
 
@@ -20,22 +20,23 @@
   background-repeat: no-repeat;
 }
 
+.social-button {
+  background-repeat: no-repeat;
+}
+
 .social-button-twitter {
   background-size: 18px 15px;
-  background-image: url("../img/social-twitter.svg");
-  background-repeat: no-repeat;
+  background-image: url("../img/icons/social-twitter.svg");
 }
 
 .social-button-facebook {
   background-size: 10px 18px;
-  background-image: url("../img/social-facebook.svg");
-  background-repeat: no-repeat;
+  background-image: url("../img/icons/social-facebook.svg");
 }
 
 .social-button-youtube {
   background-size: 20px 16px;
-  background-image: url("../img/social-youtube.svg");
-  background-repeat: no-repeat;
+  background-image: url("../img/icons/social-youtube.svg");
 }
 
 .catalog-hotels {
@@ -47,41 +48,79 @@
 .button-tile {
   padding: 20px;
   background-size: 48px 48px;
-  background-image: url("../img/catalog/button-tile.svg");
+  background-image: url("../img/catalog/icons/sorting-button-tile.svg");
   background-repeat: no-repeat;
 }
 
 .button-one {
   padding: 20px;
   background-size: 48px 48px;
-  background-image: url("../img/catalog/button-one.svg");
+  background-image: url("../img/catalog/icons/sorting-button-one.svg");
   background-repeat: no-repeat;
 }
 
 .button-list {
   padding: 20px;
   background-size: 48px 48px;
-  background-image: url("../img/catalog/button-list.svg");
+  background-image: url("../img/catalog/icons/sorting-button-list.svg");
   background-repeat: no-repeat;
 }
 
-.stars-4 {
+.stars-1 {
   padding: 10px;
-  background-size: 91px 17px;
-  background-image: url("../img/catalog/stars-4.svg");
-  background-repeat: no-repeat;
-}
-
-.stars-3 {
-  padding: 10px;
-  background-size: 68px 17px;
-  background-image: url("../img/catalog/stars-3.svg");
+  background-size: 18px 17px;
+  background-image: url("../img/catalog/icons/star-rating-1.svg");
   background-repeat: no-repeat;
 }
 
 .stars-2 {
   padding: 10px;
-  background-size: 43px 17px;
-  background-image: url("../img/catalog/stars-2.svg");
+  background-size: 18px 17px;
+  background-image: url("../img/catalog/icons/star-rating-1.svg"),
+                    url("../img/catalog/icons/star-rating-1.svg");
+  background-position: 0 0,
+                       25px 0;
+  background-repeat: no-repeat;
+}
+
+.stars-3 {
+  padding: 10px;
+  background-size: 18px 17px;
+  background-image: url("../img/catalog/icons/star-rating-1.svg"),
+                    url("../img/catalog/icons/star-rating-1.svg"),
+                    url("../img/catalog/icons/star-rating-1.svg");
+  background-position: 0 0,
+                       25px 0,
+                       50px 0;
+  background-repeat: no-repeat;
+}
+
+.stars-4 {
+  padding: 10px;
+  background-size: 18px 17px;
+  background-image: url("../img/catalog/icons/star-rating-1.svg"),
+                    url("../img/catalog/icons/star-rating-1.svg"),
+                    url("../img/catalog/icons/star-rating-1.svg"),
+                    url("../img/catalog/icons/star-rating-1.svg");
+  background-position: 0 0,
+                       25px 0,
+                       50px 0,
+                       75px 0;
+  background-repeat: no-repeat;
+}
+
+.stars-5 {
+  padding: 10px;
+  background-size: 18px 17px;
+  background-image: url("../img/catalog/icons/star-rating-1.svg"),
+                    url("../img/catalog/icons/star-rating-1.svg"),
+                    url("../img/catalog/icons/star-rating-1.svg"),
+                    url("../img/catalog/icons/star-rating-1.svg"),
+                    url("../img/catalog/icons/star-rating-1.svg");
+  background-position: 0 0,
+                       25px 0,
+                       50px 0,
+                       75px 0,
+                       100px 0;
   background-repeat: no-repeat;
 }
