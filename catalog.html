@@ -37,8 +37,8 @@
               </span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="button button-header">Хочу сюда</a>
+          <li class="button button-header">
+            <a class="button-header-text" href="catalog.html">Хочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -64,21 +64,21 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="swimming-pool">
+                  <input class="control-input" type="checkbox" name="swimming-pool">
                   <span class="control-mark"></span>
                   <span class="control-label">Бассейн</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="parking">
+                  <input class="control-input" type="checkbox" name="parking">
                   <span class="control-mark"></span>
                   <span class="control-label">Парковка</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                  <input class="control-input" type="checkbox" name="wi-fi">
                   <span class="control-mark"></span>
                   <span class="control-label">WI-FI</span>
                 </label>
@@ -90,21 +90,21 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="hotels-group" value="hotel">
+                  <input class="control-input" type="radio" name="hotels-group" value="hotel">
                   <span class="control-mark"></span>
                   <span class="control-label">Гостиница</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="hotels-group" value="motel">
+                  <input class="control-input" type="radio" name="hotels-group" value="motel">
                   <span class="control-mark"></span>
                   <span class="control-label">Мотель</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="hotels-group" value="apartments">
+                  <input class="control-input" type="radio" name="hotels-group" value="apartments">
                   <span class="control-mark"></span>
                   <span class="control-label">Апартаменты</span>
                 </label>
@@ -136,13 +136,13 @@
             <option value="popular">Сначала популярные</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-          <a class="button button-tile" href="#">
+          <a class="button-tile" href="#">
             <span class="visually-hidden">Показать карточки</span>
           </a>
-          <a class="button button-one" href="#">
+          <a class="button-one" href="#">
             <span class="visually-hidden">Показать по одной</span>
           </a>
-          <a class="button button-list" href="#">
+          <a class="button-list" href="#">
             <span class="visually-hidden">Показать списком</span>
           </a>
         </form>
@@ -160,8 +160,10 @@
                 <span class="hotels-card-value-name">Гостиница</span>
                 <span class="hotels-card-value-price">От 4000 Р</span>
               </div>
-              <a class="hotels-card-button more" href="#">Подробнее</a>
-              <button class="hotels-card-button favorites" type="button">В избранное</button>
+              <div class="button hotels-card-more">
+                <a class="hotels-card-text" href="#">Подробнее</a>
+              </div>
+              <button class="hotels-card-favorites favorites" type="button">В избранное</button>
             </div>
             <div class="star-rating">
               <div class="stars-4"></div>
@@ -180,8 +182,10 @@
                 <span class="hotels-card-value-name">Мотель</span>
                 <span class="hotels-card-value-price">От 3000 Р</span>
               </div>
-              <a class="hotels-card-button more" href="#">Подробнее</a>
-              <button class="hotels-card-button favorites" type="button">В избранное</button>
+              <div class="button hotels-card-more">
+                <a class="hotels-card-text" href="#">Подробнее</a>
+              </div>
+              <button class="hotels-card-favorites favorites" type="button">В избранное</button>
             </div>
             <div class="star-rating">
               <div class="stars-3"></div>
@@ -200,8 +204,10 @@
                 <span class="hotels-card-value-name">Апартаменты</span>
                 <span class="hotels-card-value-price">От 2000 Р</span>
               </div>
-              <a class="hotels-card-button more" href="#">Подробнее</a>
-              <button class="hotels-card-button favorites" type="button">В избранное</button>
+              <div class="button hotels-card-more">
+                <a class="hotels-card-text" href="#">Подробнее</a>
+              </div>
+              <button class="hotels-card-favorites favorites" type="button">В избранное</button>
             </div>
             <div class="star-rating">
               <div class="stars-2"></div>
@@ -220,8 +226,10 @@
                 <span class="hotels-card-value-name">Гостиница</span>
                 <span class="hotels-card-value-price">От 3000 Р</span>
               </div>
-              <a class="hotels-card-button more" href="#">Подробнее</a>
-              <button class="hotels-card-button favorites" type="button">В избранное</button>
+              <div class="button hotels-card-more">
+                <a class="hotels-card-text" href="#">Подробнее</a>
+              </div>
+              <button class="hotels-card-favorites favorites" type="button">В избранное</button>
             </div>
             <div class="star-rating">
               <div class="stars-2"></div>
@@ -231,7 +239,7 @@
         </ul>
         <button class="pagination-show-more" type="button">Загрузить ещё</button>
         <ul class="pagination">
-          <li class="pagination-item">
+          <li class="pagination-item pagination-item-current">
             <a class="pagination-link pagination-current">1</a>
           </li>
           <li class="pagination-item">
@@ -262,15 +270,15 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="subscribe">
+      <section class="subscribe-catalog">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscribe-text-catalog">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="subscribe-email">
             <label class="visually-hidden" for="subscribe-email">Email</label>
             <input class="field"  placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
           </p>
-          <button class="button" type="submit">Подписаться</button>
+          <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
       <section class="footer-social">
@@ -300,8 +308,9 @@
         </address>
       </section>
       <section class="footer-developer">
-        <h2 class="visually-hidden">Сайт разработчика</h2>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">Сайт разработчика</span>
+        </a>
       </section>
     </footer>
   </body>
