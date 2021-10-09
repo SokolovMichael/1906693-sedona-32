@@ -279,20 +279,15 @@ body {
 }
 
 .catalog-hotels {
-  display: flex;
   background-size: 1200px 408px;
   background-image: url("../img/catalog/catalog-background.jpg");
   background-repeat: no-repeat;
   color: #FFFFFF;
-  background-color: #83B3D3;
 }
 
 .catalog-hotels-container {
-  width: 1060px;
-  flex-wrap: wrap;
-  margin-left: 70px;
-  outline: 5px solid red;
-  outline-offset: -5px;
+  width: 1056px;
+  margin: 0 auto;
 }
 
 .catalog-filter {
@@ -347,8 +342,8 @@ body {
 
 .sorting {
   display: flex;
-  width: 1060px;
-  margin-left: 70px;
+  width: 1056px;
+  margin: 0 auto;
   outline: 5px solid gray;
   outline-offset: -5px;
 }
@@ -379,17 +374,14 @@ body {
 }
 
 .hotels {
-  display: flex;
-  width: 1060px;
-  margin-left: 70px;
-  flex-wrap: wrap;
-  outline: 5px solid yellow;
-  outline-offset: -5px;
+  width: 1056px;
+  margin: 0 auto;
 }
 
 .hotels-list {
   padding: 0;
-  width: 1060px;
+  margin: 0;
+  width: 1056px;
 }
 
 .hotels-card {
@@ -506,6 +498,21 @@ body {
   border-radius: 4px;
   width: 625px;
   height: 55px;
+  display: block;
+  margin: 0 auto;
+}
+
+.pagination-select-container {
+  display: flex;
+  outline: 5px solid red;
+  outline-offset: -5px;
+  justify-content: space-between;
+}
+
+.pagination {
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .pagination-item {
