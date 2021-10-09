@@ -279,11 +279,26 @@ body {
 }
 
 .catalog-hotels {
+  display: flex;
   background-size: 1200px 408px;
   background-image: url("../img/catalog/catalog-background.jpg");
   background-repeat: no-repeat;
   color: #FFFFFF;
   background-color: #83B3D3;
+}
+
+.catalog-hotels-container {
+  width: 1060px;
+  flex-wrap: wrap;
+  margin-left: 70px;
+  outline: 5px solid red;
+  outline-offset: -5px;
+}
+
+.catalog-filter {
+  display: flex;
+  outline: 5px solid green;
+  outline-offset: -5px;
 }
 
 .inner-header-title {
@@ -330,6 +345,18 @@ body {
   border-color: rgba(255, 255, 255, 0);
 }
 
+.sorting {
+  display: flex;
+  width: 1060px;
+  margin-left: 70px;
+  outline: 5px solid gray;
+  outline-offset: -5px;
+}
+
+.sorting-title {
+  text-transform: uppercase;
+}
+
 .button-tile {
   padding: 20px;
   background-size: 48px 48px;
@@ -349,6 +376,26 @@ body {
   background-size: 48px 48px;
   background-image: url("../img/catalog/icons/sorting-button-list.svg");
   background-repeat: no-repeat;
+}
+
+.hotels {
+  display: flex;
+  width: 1060px;
+  margin-left: 70px;
+  flex-wrap: wrap;
+  outline: 5px solid yellow;
+  outline-offset: -5px;
+}
+
+.hotels-list {
+  padding: 0;
+  width: 1060px;
+}
+
+.hotels-card {
+  display: flex;
+  outline: 5px solid brown;
+  outline-offset: -5px;
 }
 
 .hotels-card-name {
