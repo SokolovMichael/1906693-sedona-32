@@ -65,6 +65,7 @@ body {
   text-align: center;
   text-decoration: none;
   position: relative;
+  border-radius: 10px;
 }
 
 .navigation-link-current::before {
@@ -82,7 +83,6 @@ body {
 }
 
 .navigation-link:focus-visible {
-  border-radius: 10px;
   outline: 3px solid #83B3D3;
   outline-offset: -3px;
   color: #756257;
@@ -449,6 +449,7 @@ body {
   display: inline-block;
   padding: 20px 20px;
   position: relative;
+  border-radius: 10px;
 }
 
 .social-link-icon {
@@ -461,14 +462,14 @@ body {
   fill: #83B3D3;
 }
 
-.social-link:hover .social-link-icon, .social-link:focus .social-link-icon {
+.social-link:hover .social-link-icon,
+.social-link:focus .social-link-icon {
   fill: #68A2CA;
 }
 
 .social-link:focus-visible {
   outline: 3px solid #83B3D3;
   outline-offset: -3px;
-  border-radius: 10px;
 }
 
 .social-link:active .social-link-icon {
@@ -494,6 +495,7 @@ body {
   left: 0;
   margin: auto;
   padding: 15px;
+  border-radius: 10px;
 }
 
 .contacts-phone:hover {
@@ -504,7 +506,6 @@ body {
   color: #756257;
   outline: 3px solid #83B3D3;
   outline-offset: -3px;
-  border-radius: 10px;
 }
 
 .contacts-phone:active {
@@ -520,6 +521,7 @@ body {
 .htmlacademy-link {
   display: inline-block;
   padding: 19px 23px;
+  border-radius: 10px;
 }
 
 .htmlacademy-link-logo {
@@ -532,14 +534,14 @@ body {
   fill: #000000;
 }
 
-.htmlacademy-link:hover .htmlacademy-link-logo, .htmlacademy-link:focus .htmlacademy-link-logo {
+.htmlacademy-link:hover .htmlacademy-link-logo,
+.htmlacademy-link:focus .htmlacademy-link-logo {
   fill: #756257;
 }
 
 .htmlacademy-link:focus-visible {
   outline: 3px solid #83B3D3;
   outline-offset: -3px;
-  border-radius: 10px;
 }
 
 .htmlacademy-link:active .htmlacademy-link-logo {
