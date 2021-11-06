@@ -42,7 +42,8 @@
               12
               <span class="visually-hidden">Закрыть</span>
             </button>
-            <div class="popover popover-favorites popover-open">
+            <div class="popover-favorites popover-open">
+              <span class="popover-top"></span>
               <div class="popover-content">
                 <h2 class="visually-hidden">Все избранные</h2>
                 <ul class="favorites-items-list">
@@ -225,7 +226,6 @@
         </section>
       </div>
     </footer>
-
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <button class="modal-close-button">
@@ -234,42 +234,91 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <span class="field-text">Дата заезда:</span>
-            <p class="field-group">
-              <label class="visually-hidden" for="search-first-date">Укажите дату</label>
-              <input class="search-form-field field" type="text" id="search-first-date" name="search-first-date" placeholder="Укажите дату">
-              <svg class="calendar-icon" aria-hidden="true" focusable="false" width="15" height="14" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 9C5.8 9 6 8.8 6 8.5C6 8.2 5.8 8 5.5 8C5.2 8 5 8.2 5 8.5C5 8.8 5.2 9 5.5 9Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1H12V-1H11V1H4V-1H3V1H1C0.4 1 0 1.4 0 2V5V6V13C0 13.5 0.4 14 1 14H14C14.5 14 15 13.5 15 13V6V5V2C15 1.4 14.5 1 14 1ZM14 13H1V6H14V13ZM1 5V2H3V4H4V2H11V4H12V2H14V5H1Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 9C7.8 9 8 8.8 8 8.5C8 8.2 7.8 8 7.5 8C7.2 8 7 8.2 7 8.5C7 8.8 7.2 9 7.5 9Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 9C9.8 9 10 8.8 10 8.5C10 8.2 9.8 8 9.5 8C9.2 8 9 8.2 9 8.5C9 8.8 9.2 9 9.5 9Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 10C5.2 10 5 10.2 5 10.5C5 10.8 5.2 11 5.5 11C5.8 11 6 10.8 6 10.5C6 10.2 5.8 10 5.5 10Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 9C3.8 9 4 8.8 4 8.5C4 8.2 3.8 8 3.5 8C3.2 8 3 8.2 3 8.5C3 8.8 3.2 9 3.5 9Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 10C3.2 10 3 10.2 3 10.5C3 10.8 3.2 11 3.5 11C3.8 11 4 10.8 4 10.5C4 10.2 3.8 10 3.5 10Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 10C7.2 10 7 10.2 7 10.5C7 10.8 7.2 11 7.5 11C7.8 11 8 10.8 8 10.5C8 10.2 7.8 10 7.5 10Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 10C9.2 10 9 10.2 9 10.5C9 10.8 9.2 11 9.5 11C9.8 11 10 10.8 10 10.5C10 10.2 9.8 10 9.5 10Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 9C11.8 9 12 8.8 12 8.5C12 8.2 11.8 8 11.5 8C11.2 8 11 8.2 11 8.5C11 8.8 11.2 9 11.5 9Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 10C11.2 10 11 10.2 11 10.5C11 10.8 11.2 11 11.5 11C11.8 11 12 10.8 12 10.5C12 10.2 11.8 10 11.5 10Z"/>
-              </svg>
-            </p>
-            <span class="field-text">Дата выезда:</span>
-            <p class="field-group">
-              <label class="visually-hidden" for="search-last-date">Укажите дату</label>
-              <input class="search-form-field field" type="text" id="search-last-date" name="search-last-date" placeholder="Укажите дату">
-              <svg class="calendar-icon" aria-hidden="true" focusable="false" width="15" height="14" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 9C5.8 9 6 8.8 6 8.5C6 8.2 5.8 8 5.5 8C5.2 8 5 8.2 5 8.5C5 8.8 5.2 9 5.5 9Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1H12V-1H11V1H4V-1H3V1H1C0.4 1 0 1.4 0 2V5V6V13C0 13.5 0.4 14 1 14H14C14.5 14 15 13.5 15 13V6V5V2C15 1.4 14.5 1 14 1ZM14 13H1V6H14V13ZM1 5V2H3V4H4V2H11V4H12V2H14V5H1Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 9C7.8 9 8 8.8 8 8.5C8 8.2 7.8 8 7.5 8C7.2 8 7 8.2 7 8.5C7 8.8 7.2 9 7.5 9Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 9C9.8 9 10 8.8 10 8.5C10 8.2 9.8 8 9.5 8C9.2 8 9 8.2 9 8.5C9 8.8 9.2 9 9.5 9Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 10C5.2 10 5 10.2 5 10.5C5 10.8 5.2 11 5.5 11C5.8 11 6 10.8 6 10.5C6 10.2 5.8 10 5.5 10Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 9C3.8 9 4 8.8 4 8.5C4 8.2 3.8 8 3.5 8C3.2 8 3 8.2 3 8.5C3 8.8 3.2 9 3.5 9Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 10C3.2 10 3 10.2 3 10.5C3 10.8 3.2 11 3.5 11C3.8 11 4 10.8 4 10.5C4 10.2 3.8 10 3.5 10Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 10C7.2 10 7 10.2 7 10.5C7 10.8 7.2 11 7.5 11C7.8 11 8 10.8 8 10.5C8 10.2 7.8 10 7.5 10Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 10C9.2 10 9 10.2 9 10.5C9 10.8 9.2 11 9.5 11C9.8 11 10 10.8 10 10.5C10 10.2 9.8 10 9.5 10Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 9C11.8 9 12 8.8 12 8.5C12 8.2 11.8 8 11.5 8C11.2 8 11 8.2 11 8.5C11 8.8 11.2 9 11.5 9Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 10C11.2 10 11 10.2 11 10.5C11 10.8 11.2 11 11.5 11C11.8 11 12 10.8 12 10.5C12 10.2 11.8 10 11.5 10Z"/>
-              </svg>
-            </p>
+            <div class="search-form-dates">
+              <span class="field-text">Дата заезда:</span>
+              <p class="field-group">
+                <label class="visually-hidden" for="search-first-date">Укажите дату</label>
+                <input class="search-form-field field" type="text" id="search-first-date" name="search-first-date" placeholder="Укажите дату">
+                <svg class="calendar-icon" aria-hidden="true" focusable="false" width="15" height="14" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 9C5.8 9 6 8.8 6 8.5C6 8.2 5.8 8 5.5 8C5.2 8 5 8.2 5 8.5C5 8.8 5.2 9 5.5 9Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1H12V-1H11V1H4V-1H3V1H1C0.4 1 0 1.4 0 2V5V6V13C0 13.5 0.4 14 1 14H14C14.5 14 15 13.5 15 13V6V5V2C15 1.4 14.5 1 14 1ZM14 13H1V6H14V13ZM1 5V2H3V4H4V2H11V4H12V2H14V5H1Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 9C7.8 9 8 8.8 8 8.5C8 8.2 7.8 8 7.5 8C7.2 8 7 8.2 7 8.5C7 8.8 7.2 9 7.5 9Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 9C9.8 9 10 8.8 10 8.5C10 8.2 9.8 8 9.5 8C9.2 8 9 8.2 9 8.5C9 8.8 9.2 9 9.5 9Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 10C5.2 10 5 10.2 5 10.5C5 10.8 5.2 11 5.5 11C5.8 11 6 10.8 6 10.5C6 10.2 5.8 10 5.5 10Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 9C3.8 9 4 8.8 4 8.5C4 8.2 3.8 8 3.5 8C3.2 8 3 8.2 3 8.5C3 8.8 3.2 9 3.5 9Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 10C3.2 10 3 10.2 3 10.5C3 10.8 3.2 11 3.5 11C3.8 11 4 10.8 4 10.5C4 10.2 3.8 10 3.5 10Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 10C7.2 10 7 10.2 7 10.5C7 10.8 7.2 11 7.5 11C7.8 11 8 10.8 8 10.5C8 10.2 7.8 10 7.5 10Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 10C9.2 10 9 10.2 9 10.5C9 10.8 9.2 11 9.5 11C9.8 11 10 10.8 10 10.5C10 10.2 9.8 10 9.5 10Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 9C11.8 9 12 8.8 12 8.5C12 8.2 11.8 8 11.5 8C11.2 8 11 8.2 11 8.5C11 8.8 11.2 9 11.5 9Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 10C11.2 10 11 10.2 11 10.5C11 10.8 11.2 11 11.5 11C11.8 11 12 10.8 12 10.5C12 10.2 11.8 10 11.5 10Z"/>
+                </svg>
+              </p>
+              <span class="field-text">Дата выезда:</span>
+              <p class="field-group">
+                <label class="visually-hidden" for="search-last-date">Укажите дату</label>
+                <input class="search-form-field field" type="text" id="search-last-date" name="search-last-date" placeholder="Укажите дату">
+                <svg class="calendar-icon" aria-hidden="true" focusable="false" width="15" height="14" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 9C5.8 9 6 8.8 6 8.5C6 8.2 5.8 8 5.5 8C5.2 8 5 8.2 5 8.5C5 8.8 5.2 9 5.5 9Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1H12V-1H11V1H4V-1H3V1H1C0.4 1 0 1.4 0 2V5V6V13C0 13.5 0.4 14 1 14H14C14.5 14 15 13.5 15 13V6V5V2C15 1.4 14.5 1 14 1ZM14 13H1V6H14V13ZM1 5V2H3V4H4V2H11V4H12V2H14V5H1Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 9C7.8 9 8 8.8 8 8.5C8 8.2 7.8 8 7.5 8C7.2 8 7 8.2 7 8.5C7 8.8 7.2 9 7.5 9Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 9C9.8 9 10 8.8 10 8.5C10 8.2 9.8 8 9.5 8C9.2 8 9 8.2 9 8.5C9 8.8 9.2 9 9.5 9Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 10C5.2 10 5 10.2 5 10.5C5 10.8 5.2 11 5.5 11C5.8 11 6 10.8 6 10.5C6 10.2 5.8 10 5.5 10Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 9C3.8 9 4 8.8 4 8.5C4 8.2 3.8 8 3.5 8C3.2 8 3 8.2 3 8.5C3 8.8 3.2 9 3.5 9Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 10C3.2 10 3 10.2 3 10.5C3 10.8 3.2 11 3.5 11C3.8 11 4 10.8 4 10.5C4 10.2 3.8 10 3.5 10Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 10C7.2 10 7 10.2 7 10.5C7 10.8 7.2 11 7.5 11C7.8 11 8 10.8 8 10.5C8 10.2 7.8 10 7.5 10Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 10C9.2 10 9 10.2 9 10.5C9 10.8 9.2 11 9.5 11C9.8 11 10 10.8 10 10.5C10 10.2 9.8 10 9.5 10Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 9C11.8 9 12 8.8 12 8.5C12 8.2 11.8 8 11.5 8C11.2 8 11 8.2 11 8.5C11 8.8 11.2 9 11.5 9Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 10C11.2 10 11 10.2 11 10.5C11 10.8 11.2 11 11.5 11C11.8 11 12 10.8 12 10.5C12 10.2 11.8 10 11.5 10Z"/>
+                </svg>
+              </p>
+            </div>
+            <div class="search-form-people">
+              <div class="adults">
+                <span class="field-text">Взрослые:</span>
+                <p class="field-group-adults">
+                  <label class="visually-hidden" for="search-number-of-adults">Укажите количество взрослых</label>
+                  <input class="search-number-of-adults search-field" type="number" id="search-number-of-adults" name="search-number-of-adults">
+                  <button class="search-minus-button" type="button">
+                    <span class="visually-hidden">Удалить</span>
+                    <svg class="search-minus-button-icon" aria-hidden="true" focusable="false" width="13" height="1" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L0 1L13 1V0L0 0Z"/>
+                    </svg>
+                  </button>
+                  <button class="search-plus-button" type="button">
+                    <span class="visually-hidden">Добавить</span>
+                    <svg class="search-plus-button-icon" aria-hidden="true" focusable="false" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                    </svg>
+                  </button>
+                </p>
+              </div>
+              <div class="children">
+                <span class="field-text">Дети:</span>
+                <button class="children-information children-information-open" type="button">
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+                <div class="popover-info popover-info-open">
+                  <span class="popover-info-top"></span>
+                  <div class="popover-info-content">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+                </div>
+                <p class="field-group-children">
+                  <label class="visually-hidden" for="search-number-of-children">Укажите количество детей</label>
+                  <input class="search-number-of-children search-field" type="number" id="search-number-of-children" name="search-number-of-children">
+                  <button class="search-minus-button" type="button">
+                    <span class="visually-hidden">Удалить</span>
+                    <svg class="search-minus-button-icon" aria-hidden="true" focusable="false" width="13" height="1" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L0 1L13 1V0L0 0Z"/>
+                    </svg>
+                  </button>
+                  <button class="search-plus-button" type="button">
+                    <span class="visually-hidden">Добавить</span>
+                    <svg class="search-plus-button-icon" aria-hidden="true" focusable="false" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                    </svg>
+                  </button>
+                </p>
+              </div>
+            </div>
             <button class="button-search" type="submit">Найти</button>
           </form>
         </section>
