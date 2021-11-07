@@ -173,23 +173,30 @@ body {
   border-radius: 20px;
   position: absolute;
   top: 62px;
-  left: -200px;
+  right: -160px;
   z-index: 1;
   box-sizing: border-box;
+  padding: 25px 0 0;
 }
 
-.popover-top {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 215px;
-  top: -10px;
-  background-image: url("../img/icons/popover-top.svg");
-  background-repeat: no-repeat;
+.popover-favorites::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: 4px;
+    background-image: url("../img/icons/popover-top.svg");
+    background-repeat: no-repeat;
 }
 
 .popover-open {
   display: block;
+}
+
+.popover-content {
+  padding: 0 25px;
 }
 
 .favorites-items-list {
@@ -200,7 +207,7 @@ body {
 .favorites-item {
   display: grid;
   grid-template-columns: 1fr 36px;
-  margin: 25px;
+  margin: 0 0 25px;
 }
 
 .favorites-item-link {
@@ -274,7 +281,6 @@ body {
 
 .button-favorites {
   width: 400px;
-  margin: 0;
   border-radius: 0px 0px 20px 20px;
   text-align: center;
   padding: 20px 0;
@@ -690,7 +696,7 @@ body {
   outline-offset: -3px;
 }
 
-.modal-container {
+.modal-container-active {
   position: fixed;
   top: 0;
   left: 0;
@@ -700,6 +706,10 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+.modal-container {
+  display: none;
+}
+
 .modal {
   position: relative;
   margin: auto;
@@ -707,10 +717,6 @@ body {
   background-color: #FFFFFF;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-}
-
-.modal-container-close {
-  display: none;
 }
 
 .modal-close-button {
@@ -753,14 +759,11 @@ body {
   text-transform: uppercase;
 }
 
-.search-form-dates {
+.field-group {
   display: grid;
   grid-template-columns: 155px 1fr;
-
-}
-
-.search-form-dates .field-group {
-  margin: 0 0 40px;
+  margin-bottom: 40px;
+  position: relative;
 }
 
 .search-form-field {
@@ -768,9 +771,12 @@ body {
   padding: 0 19px;
   background: #F2F2F2;
   border-radius: 4px;
-  }
+}
 
-.field-text {
+label[for="search-first-date"],
+label[for="search-last-date"],
+label[for="search-number-of-adults"],
+label[for="search-number-of-children"] {
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
@@ -789,10 +795,6 @@ body {
   border: none;
   color: #FFFFFF;
   cursor: pointer;
-}
-
-.field-group {
-  position: relative;
 }
 
 .search-form-field::-webkit-input-placeholder {
@@ -823,34 +825,56 @@ body {
   opacity: 1;
 }
 
-.calendar-icon {
+.calendar-button {
   position: absolute;
-  top: 18px;
-  right: 19px;
+  top: 13px;
+  right: 13px;
+  border: none;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+}
+
+.calendar-button-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill:#000000;
   opacity: 0.3;
+}
+
+.calendar-button:hover .calendar-button-icon,
+.calendar-button:focus-visible .calendar-button-icon {
+  opacity: 1;
+}
+
+.calendar-button:focus-visible {
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
+}
+
+.calendar-button:active .calendar-button-icon {
+  opacity: 0.2;
 }
 
 .search-form-people {
   display: grid;
   grid-template-columns: 288px 230px;
   gap: 56px;
+  margin-bottom: 40px;
 }
 
 .adults {
   display: grid;
   grid-template-columns: 1fr 133px;
-}
-
-.search-form .field-group-adults {
-  margin: 0 0 40px;
-}
-
-.field-group-adults {
   position: relative;
 }
 
-.search-number-of-adults {
-  width: 133px;
+.search-number-of-people {
   height: 50px;
   border-radius: 4px;
   background: #F2F2F2;
@@ -858,22 +882,19 @@ body {
   color: #000000;
   text-align: center;
   appearance: textfield;
-  padding: 0;
+  padding: 0 40px;
 }
 
-.search-number-of-adults::-webkit-outer-spin-button,
-.search-number-of-adults::-webkit-inner-spin-button {
+.search-number-of-people::-webkit-outer-spin-button,
+.search-number-of-people::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
 
 .search-minus-button {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: 13px;
+  top: 13px;
+  right: 101px;
   border: none;
   cursor: pointer;
   width: 25px;
@@ -908,11 +929,8 @@ body {
 
 .search-plus-button {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: 13px 13px 13px 95px;
+  top: 13px;
+  right: 13px;
   cursor: pointer;
   border: none;
   width: 25px;
@@ -996,7 +1014,8 @@ body {
   right: 35px;
 }
 
-.popover-info-top {
+.popover-info::before {
+  content: "";
   position: absolute;
   top: -9px;
   right: 0;
@@ -1012,24 +1031,6 @@ body {
 
 .field-group-children {
   position: relative;
-}
-
-.search-number-of-children {
-  width: 133px;
-  height: 50px;
-  border-radius: 4px;
-  background: #F2F2F2;
-  border: none;
-  color: #000000;
-  text-align: center;
-  appearance: textfield;
-  padding: 0;
-}
-
-.search-number-of-children::-webkit-outer-spin-button,
-.search-number-of-children::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
 }
 
 .catalog-hotels {
@@ -1154,8 +1155,7 @@ body {
   content: "";
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   background-image: url("../img/catalog/icons/checkbox.svg");
   background-repeat: no-repeat;
@@ -1196,7 +1196,7 @@ body {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.control .control-input:focus + .control-mark {
+.control-input:focus + .control-mark {
 	outline: 3px solid #83B3D3;
   outline-offset: -3px;
 }
