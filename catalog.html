@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <header class="page-header">
@@ -19,9 +20,7 @@
             <a class="navigation-link navigation-link-current">Гостиницы</a>
           </li>
         </ul>
-        <a class="logo" href="index.html">
-          <img class="logo-image" src="img/icons/logo-image-sedona.svg" width="138" height="70" alt="Логотип сайта «Седона»">
-        </a>
+        <a class="logo" href="index.html"></a>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-search" href="#">
@@ -38,9 +37,13 @@
               </svg>
               <span class="visually-hidden">Избранное</span>
             </a>
+            <button class="popover-close-button" type="button">
+              12
+              <span class="visually-hidden">Закрыть</span>
+            </button>
           </li>
           <li class="navigation-item">
-            <a class="button button-header" href="#">Хочу сюда</a>
+            <a class="button button-header" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -61,11 +64,11 @@
                     <span class="visually-hidden">На главную</span>
                   </a>
                 </li>
-                <div class="breadcrumbs-nav-link">
+                <li class="breadcrumbs-nav-link">
                   <svg class="breadcrumbs-nav-link-icon" aria-hidden="true" focusable="false" width="5" height="8" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.79998 3.59999L0.999984 0.199988C0.799984 -1.22041e-05 0.399984 -1.22041e-05 0.0999836 0.199988C-0.200016 0.399988 -0.100016 0.799988 0.0999836 0.999988L3.39998 3.99999L0.199984 6.99999C-1.63764e-05 7.19999 -1.63764e-05 7.59999 0.199984 7.79999C0.199984 7.89999 0.499984 7.99999 0.599984 7.99999C0.699984 7.99999 0.899984 7.89999 0.999984 7.79999L4.79998 4.39999C5.09998 4.19999 5.09998 3.79999 4.79998 3.59999Z"/>
                   </svg>
-                </div>
+                </li>
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
                 </li>
@@ -73,7 +76,7 @@
             </header>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Инфраструктура</legend>
+                <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -130,15 +133,15 @@
                   <div class="range-wrapper-inputs">
                     <label class="catalog-filter-label">
                       <input class="range-input" type="number" value="0" name="min-price">
-                      <p class="range-input-text">от</p>
+                      <span class="range-input-text">от</span>
                     </label>
                     <label class="catalog-filter-label">
                       <input class="range-input" type="number" value="9000" name="max-price">
-                      <p class="range-input-text">до</p>
+                      <span class="range-input-text">до</span>
                     </label>
                   </div>
                   <div class="range-scale">
-                    <div class="range-bar" style="left: 0px; width: 227px">
+                    <div class="range-bar" style="left: 0px; width: 236px">
                       <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
@@ -156,58 +159,59 @@
             </form>
           </div>
         </section>
-          <form class="sorting">
-            <label class="visually-hidden" for="sorting">Сортировка</label>
-            <h2 class="sorting-title">Найдено гостиниц: 38</h2>
-            <div class="select-card">
-              <select class="select-control" id="sorting" name="sorting">
-                <option class="select-control-type" value="cheap">Сначала дешёвые</option>
-                <option class="select-control-type" value="popular">Сначала популярные</option>
-                <option class="select-control-type" value="expensive">Сначала дорогие</option>
-              </select>
-              <a class="sorting-card" href="#">
-                 <svg class="sorting-card-icon" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H0V6H4V0Z" />
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H12V6H16V0Z" />
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H6V6H10V0Z" />
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 8H0V14H4V8Z" />
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8H12V14H16V8Z" />
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 8H6V14H10V8Z" />
-                </svg>
-                <span class="visually-hidden">Показать карточки</span>
-              </a>
-              <a class="sorting-card" href="#">
-                <svg class="sorting-card-icon" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16 12H0V14H16V12Z" />
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" />
-                </svg>
-                <span class="visually-hidden">Показать по одной</span>
-              </a>
-              <a class="sorting-card" href="#">
-                <svg class="sorting-card-icon" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0H0V2H2V0Z" />
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H4V2H16V0Z" />
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2 4H0V6H2V4Z" />
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16 4H4V6H16V4Z" />
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2 8H0V10H2V8Z" />
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8H4V10H16V8Z" />
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12H0V14H2V12Z" />
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16 12H4V14H16V12Z" />
-                </svg>
-                <span class="visually-hidden">Показать списком</span>
-              </a>
-            </div>
-          </form>
+        <form class="sorting" action="https://echo.htmlacademy.ru/">
+          <label class="visually-hidden" for="sorting">Сортировка</label>
+          <h2 class="sorting-title">Найдено гостиниц: 38</h2>
+          <div class="select-card">
+            <select class="select-control" id="sorting" name="sorting">
+              <option class="select-control-type" value="cheap">Сначала дешёвые</option>
+              <option class="select-control-type" value="popular">Сначала популярные</option>
+              <option class="select-control-type" value="expensive">Сначала дорогие</option>
+            </select>
+            <a class="sorting-card" href="#">
+               <svg class="sorting-card-icon" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H0V6H4V0Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H12V6H16V0Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H6V6H10V0Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 8H0V14H4V8Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8H12V14H16V8Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 8H6V14H10V8Z" />
+              </svg>
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a class="sorting-card" href="#">
+              <svg class="sorting-card-icon" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 12H0V14H16V12Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" />
+              </svg>
+              <span class="visually-hidden">Показать по одной</span>
+            </a>
+            <a class="sorting-card" href="#">
+              <svg class="sorting-card-icon" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0H0V2H2V0Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H4V2H16V0Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 4H0V6H2V4Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 4H4V6H16V4Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 8H0V10H2V8Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8H4V10H16V8Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12H0V14H2V12Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 12H4V14H16V12Z" />
+              </svg>
+              <span class="visually-hidden">Показать списком</span>
+            </a>
+          </div>
+        </form>
         <section class="hotels">
+          <h2 class="visually-hidden">Все гостиницы</h2>
           <ul class="hotels-list">
             <li class="hotels-card">
               <a class="hotels-card-link" href="#">
-                <img class="hotels-card-image" src="img/catalog/hotels-amara-resort-spa.jpg" width="180" height="120" alt="Amara Resort &#38; Spa">
+                <img class="hotels-card-image" src="img/catalog/hotels-amara-resort-spa.jpg" width="180" height="120" alt="Гостиница Amara Resort and Spa.">
               </a>
               <div class="hotels-card-container">
-                <a class="hotels-card-name" href="#">
-                  <h3 class="hotels-card-title">Amara Resort &#38; Spa</h3>
-                </a>
+                  <a class="hotels-card-name" href="#">
+                    <h3 class="hotels-card-title">Amara Resort &#38; Spa</h3>
+                  </a>
                 <div class="hotels-card-value">
                   <span class="hotels-card-value-name">Гостиница</span>
                   <span class="hotels-card-value-price">От 4000 Р</span>
@@ -216,18 +220,18 @@
                 </div>
               </div>
               <div class="rating-container">
-                <div class="stars stars-4"></div>
+                <div class="stars-4"></div>
                 <div class="rating">Рейтинг: 8,5</div>
               </div>
             </li>
             <li class="hotels-card">
               <a class="hotels-card-link" href="#">
-                <img class="hotels-card-image" src="img/catalog/hotels-desert-quai-inn.jpg" width="180" height="120" alt="Desert Quail Inn">
+                <img class="hotels-card-image" src="img/catalog/hotels-desert-quai-inn.jpg" width="180" height="120" alt="Мотель Desert Quail Inn.">
               </a>
               <div class="hotels-card-container">
-                <a class="hotels-card-name" href="#">
-                  <h3 class="hotels-card-title">Desert Quail Inn</h3>
-                </a>
+                  <a class="hotels-card-name" href="#">
+                    <h3 class="hotels-card-title">Desert Quail Inn</h3>
+                  </a>
                 <div class="hotels-card-value">
                   <span class="hotels-card-value-name">Мотель</span>
                   <span class="hotels-card-value-price">От 3000 Р</span>
@@ -236,38 +240,38 @@
                 </div>
               </div>
               <div class="rating-container">
-                <div class=" stars stars-3"></div>
+                <div class="stars-3"></div>
                 <div class="rating">Рейтинг: 8,9</div>
               </div>
             </li>
             <li class="hotels-card">
               <a class="hotels-card-link" href="#">
-                <img class="hotels-card-image" src="img/catalog/hotels-villas-at-poco-diablo.jpg" width="180" height="120" alt="Villas at Poco Diablo">
+                <img class="hotels-card-image" src="img/catalog/hotels-villas-at-poco-diablo.jpg" width="180" height="120" alt="Апартаменты Villas at Poco Diablo.">
               </a>
               <div class="hotels-card-container">
-                <a class="hotels-card-name" href="#">
-                  <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
-                </a>
+                  <a class="hotels-card-name" href="#">
+                    <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
+                  </a>
                 <div class="hotels-card-value">
                   <span class="hotels-card-value-name">Апартаменты</span>
                   <span class="hotels-card-value-price">От 2000 Р</span>
                   <a class="button hotels-card-more" href="#">Подробнее</a>
-                  <button class="button hotels-card-favorites" type="button">В избранное</button>
+                  <button class="button hotels-card-in-favorites" type="button">В избранном</button>
                 </div>
               </div>
               <div class="rating-container">
-                <div class="stars stars-2"></div>
+                <div class="stars-2"></div>
                 <div class="rating">Рейтинг: 9,2</div>
               </div>
             </li>
             <li class="hotels-card">
               <a class="hotels-card-link" href="#">
-                <img class="hotels-card-image" src="img/catalog/hotels-greentree-inn.jpg" width="180" height="120" alt="GreenTree Inn">
+                <img class="hotels-card-image" src="img/catalog/hotels-greentree-inn.jpg" width="180" height="120" alt="Гостиница GreenTree Inn.">
               </a>
               <div class="hotels-card-container">
-                <a class="hotels-card-name" href="#">
-                  <h3 class="hotels-card-title">GreenTree Inn</h3>
-                </a>
+                  <a class="hotels-card-name" href="#">
+                    <h3 class="hotels-card-title">GreenTree Inn</h3>
+                  </a>
                 <div class="hotels-card-value">
                   <span class="hotels-card-value-name">Гостиница</span>
                   <span class="hotels-card-value-price">От 3000 Р</span>
@@ -276,7 +280,7 @@
                 </div>
               </div>
               <div class="rating-container">
-                <div class="stars stars-2"></div>
+                <div class="stars-2"></div>
                 <div class="rating">Рейтинг: 9,2</div>
               </div>
             </li>

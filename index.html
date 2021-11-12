@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <header class="page-header">
@@ -19,9 +20,7 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <a class="logo">
-          <img class="logo-image" src="img/icons/logo-image-sedona.svg" width="138" height="70" alt="Логотип сайта «Седона»">
-        </a>
+        <a class="logo"></a>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -38,7 +37,7 @@
               </svg>
               <span class="visually-hidden">Избранное</span>
             </a>
-            <button class="popover-close-button">
+            <button class="popover-close-button" type="button">
               12
               <span class="visually-hidden">Закрыть</span>
             </button>
@@ -48,13 +47,13 @@
                 <ul class="favorites-items-list">
                   <li class="favorites-item">
                     <a class="favorites-item-link" href="#">
-                      <img class="favorites-item-image" src="img/hotels-desert-quai-inn-small.png" width="48" height="48" alt="Desert Quail Inn">
+                      <img class="favorites-item-image" src="img/hotels-desert-quai-inn-small.png" width="48" height="48" alt="Мотель Desert Quail Inn.">
                       <div class="favorites-item-container">
                         <h3 class="favorites-item-title">Desert Quail Inn</h3>
                         <span class="favorites-item-type">Мотель</span>
                       </div>
                     </a>
-                    <button type="button" class="favorites-item-button">
+                    <button class="favorites-item-button" type="button">
                       <svg class="favorites-item-delete" width="16" height="16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z" />
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z" />
@@ -66,13 +65,13 @@
                   </li>
                   <li class="favorites-item">
                     <a class="favorites-item-link" href="#">
-                      <img class="favorites-item-image" src="img/hotels-villas-at-poco-diablo-small.png" width="48" height="48" alt="Desert Quail Inn">
+                      <img class="favorites-item-image" src="img/hotels-villas-at-poco-diablo-small.png" width="48" height="48" alt="Апартаменты Villas at Poco Diablo.">
                       <div class="favorites-item-container">
                         <h3 class="favorites-item-title">Villas at Poco Diablo</h3>
                         <span class="favorites-item-type">Апартаменты</span>
                       </div>
                     </a>
-                    <button type="button" class="favorites-item-button">
+                    <button class="favorites-item-button" type="button">
                       <svg class="favorites-item-delete" width="16" height="16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z" />
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z" />
@@ -88,7 +87,7 @@
             </div>
           </li>
           <li class="navigation-item">
-            <a class="button button-header" href="catalog.html">Хочу сюда</a>
+            <a class="button button-header" href="catalog.html">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -97,7 +96,7 @@
       <div class="page-container">
         <h1 class="visually-hidden">Седона</h1>
         <div class="intro">
-          <img class="intro-image" src="img/intro-image.jpg" width="1200" height="458" alt="Добро пожаловать в Седону">
+          <img class="intro-image" src="img/intro-image.jpg" width="1200" height="485" alt="Добро пожаловать в Седону.">
         </div>
         <div class="intro-text">
           <p class="intro-text-introduction">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -112,31 +111,31 @@
                 <p class="advantages-description advantages-description-number">— №1 —</p>
                 <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantages-description-image-photo" src="img/photo-1.jpg" width="800" height="384" alt="Фотография городка">
+              <img class="advantages-description-image-photo" src="img/photo-1.jpg" width="800" height="384" alt="Фотография городка.">
             </li>
             <li class="advantages-item">
               <div class="advantages-item-no-number">
-                <img class="advantages-description-image" src="img/icons/advantages-home.svg" width="75" height="72" alt="Жильё">
+                <img class="advantages-description-image" src="img/icons/advantages-home.svg" width="75" height="72" alt="Жильё.">
                 <h3 class="advantages-title">Жильё</h3>
                 <p class="advantages-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
               </div>
             </li>
             <li class="advantages-item advantages-item-food">
               <div class="advantages-item-no-number">
-                <img class="advantages-description-image" src="img/icons/advantages-food.svg" width="74" height="70" alt="Еда">
+                <img class="advantages-description-image" src="img/icons/advantages-food.svg" width="74" height="70" alt="Еда.">
                 <h3 class="advantages-title">Еда</h3>
                 <p class="advantages-description">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
               </div>
             </li>
             <li class="advantages-item">
               <div class="advantages-item-no-number">
-                <img class="advantages-description-image" src="img/icons/advantages-souvenirs.svg" width="64" height="76" alt="Сувениры">
+                <img class="advantages-description-image" src="img/icons/advantages-souvenirs.svg" width="64" height="76" alt="Сувениры.">
                 <h3 class="advantages-title">Сувениры</h3>
                 <p class="advantages-description">Не только китайского,<br>но и настоящего местного производства!</p>
               </div>
             </li>
             <li class="advantages-item advantages-item-white">
-                <img class="advantages-description-image-photo" src="img/photo-2.jpg" width="800" height="384" alt="Фотография Моста дьявола">
+                <img class="advantages-description-image-photo" src="img/photo-2.jpg" width="800" height="384" alt="Фотография Моста дьявола.">
                 <div class="advantages-item-container">
                   <h3 class="advantages-title advantages-title-number">Там есть<br>мост дьявола</h3>
                   <p class="advantages-description advantages-description-number">— №2 —</p>
@@ -227,7 +226,7 @@
     </footer>
     <div class="modal-container modal-container-active">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
