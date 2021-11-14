@@ -433,6 +433,10 @@ body {
   color: #333333;
 }
 
+.advantages-item:nth-child(2) .advantages-description {
+  width: 180px;
+}
+
 .advantages-description-number {
   margin: 0 auto 29px;
 }
