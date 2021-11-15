@@ -29,6 +29,20 @@ body {
   font-weight: 400;
   color: #000000;
   background-color: #FFFFFF;
+  box-shadow: 0 18px 40px rgba(79, 70, 60, 0.16);
+}
+
+body::after {
+  content: '';
+  width: 1200px;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  box-shadow: 0px 0px 16px black;
 }
 
 .page-header {
@@ -342,7 +356,7 @@ body {
   padding: 9px 0 10px 0;
   text-align: center;
   border-radius: 4px;
-  margin: -5px 0 0 21px;
+  margin: 0 0 5px 22px;
 }
 
 .intro {
@@ -1085,7 +1099,6 @@ label[for="search-number-of-children"] {
 
 .catalog-hotels {
   width: 1200px;
-  padding-bottom: 67px;
   color: #FFFFFF;
   background-size: 1200px 408px;
   background-image: url("../img/catalog/catalog-background.jpg");
@@ -1094,14 +1107,14 @@ label[for="search-number-of-children"] {
 }
 
 .catalog-hotels-container {
-  width: 1056px;
+  width: 1068px;
   margin: 0 auto;
   padding-top: 34px;
 }
 
 .inner-header-title {
   display: block;
-  margin: 0 0 0;
+  margin: 0 0 0 6px;
   font-size: 60px;
   line-height: 70px;
 }
@@ -1201,8 +1214,8 @@ label[for="search-number-of-children"] {
 
 .catalog-filter {
   display: grid;
-  grid-template-columns: 150px 248px 303px 160px;
-  gap: 65px;
+  grid-template-columns: 215px 1fr 338px 165px;
+  gap: 30px;
 }
 
 .catalog-filter-group {
@@ -1211,8 +1224,13 @@ label[for="search-number-of-children"] {
   border: none;
 }
 
+.catalog-filter-group:first-of-type {
+  margin-left: 6px;
+}
+
+
+
 .catalog-filter-title {
-  margin-bottom: 10px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -1220,11 +1238,20 @@ label[for="search-number-of-children"] {
 
 .catalog-filter-list {
   padding: 0;
+  margin-top: 30px;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 160px;
 }
 
 .catalog-filter-item {
-  margin-bottom: 13px;
+  margin: 0 10px 13px 0;
+}
+
+.catalog-filter-item:last-child {
+  margin-bottom: 0;
 }
 
 .control {
@@ -1290,7 +1317,7 @@ label[for="search-number-of-children"] {
 }
 
 .range {
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 .range-wrapper-inputs {
@@ -1299,7 +1326,6 @@ label[for="search-number-of-children"] {
 
 .catalog-filter-label {
   display: flex;
-  margin-right: -2px;
   position: relative;
 }
 
@@ -1567,7 +1593,8 @@ label[for="search-number-of-children"] {
 .hotels-card {
   display: grid;
   grid-template-columns: 180px 1fr 160px;
-  grid-template-rows: 17px 1fr 30px;
+  grid-template-rows: 10px 1fr 30px;
+  margin: 0;
 }
 
 .hotels-card::before {
@@ -1585,7 +1612,8 @@ label[for="search-number-of-children"] {
 .hotels-card-link {
   width: 180px;
   height: 120px;
-  margin-top: 13px;
+  margin-top: 20px;
+
 }
 
 .hotels-card-link:hover {
@@ -1604,7 +1632,8 @@ label[for="search-number-of-children"] {
 .hotels-card-container {
   display: flex;
   flex-direction: column;
-  margin-left: 27px;
+  margin: 15px 0 0 27px;
+
 }
 
 .hotels-card-name-link {
@@ -1630,7 +1659,7 @@ label[for="search-number-of-children"] {
 
 .hotels-card-title {
   margin: 0;
-  padding: 5px 13px;
+  padding: 0 13px;
   font-size: 24px;
   line-height: 31px;
 }
@@ -1647,7 +1676,7 @@ label[for="search-number-of-children"] {
 
 .hotels-card-value-name {
   grid-column: 1 / 2;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 
 .hotels-card-value-price {
@@ -1710,7 +1739,7 @@ label[for="search-number-of-children"] {
 .rating-container {
   display: flex;
   flex-direction: column;
-  margin-top: 14px;
+  margin-top: 22px;
 }
 
 .rating {
