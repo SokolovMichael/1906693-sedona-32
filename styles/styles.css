@@ -1093,6 +1093,7 @@ label[for="search-number-of-children"] {
 
 .catalog-hotels {
   width: 1200px;
+  height: 408px;
   color: #FFFFFF;
   background-size: 1200px 408px;
   background-image: url("../img/catalog/catalog-background.jpg");
@@ -1133,7 +1134,7 @@ label[for="search-number-of-children"] {
 .breadcrumbs-item::before {
   position: absolute;
   top: 10px;
-  left: -5px;
+  left: -7px;
   width: 5px;
   height: 8px;
   background-image: url("../img/catalog/icons/breadcrumbs-nav-icon.svg");
@@ -1208,7 +1209,7 @@ label[for="search-number-of-children"] {
 
 .catalog-filter {
   display: grid;
-  grid-template-columns: 215px 1fr 338px 165px;
+  grid-template-columns: 190px 1fr 338px 165px;
   gap: 30px;
 }
 
@@ -1222,8 +1223,6 @@ label[for="search-number-of-children"] {
   margin-left: 6px;
 }
 
-
-
 .catalog-filter-title {
   font-size: 20px;
   line-height: 26px;
@@ -1236,8 +1235,6 @@ label[for="search-number-of-children"] {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: 160px;
 }
 
 .catalog-filter-item {
@@ -1268,6 +1265,11 @@ label[for="search-number-of-children"] {
 
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
+  margin-left: 3px;
+}
+
+.control-input[type="radio"] {
+  margin-left: 3px;
 }
 
 .control-input[type="radio"]:checked + .control-mark::before {
@@ -1308,6 +1310,10 @@ label[for="search-number-of-children"] {
 .control-label {
   font-size: 18px;
   line-height: 23px;
+}
+
+.control-label-radio {
+  margin-left: 4px;
 }
 
 .range {
